@@ -4,6 +4,7 @@
     --title-text-color: #FFFFFF;
     --accent-color: #2196F3;
     --logo-accent-color: #000000;
+    --clients-accent-color: #afb1b8;
     --footer-mail-text-color: rgba(255, 255, 255, 0.6);
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
@@ -107,12 +108,10 @@ ul {
 
 .logo-footer {
     margin-top: 60px;
-
     color: var(--title-text-color);
 }
 
 .logo-span {
-    
     color: var(--accent-color);
 }
 
@@ -327,8 +326,8 @@ ul {
 .feature-title, 
 .portfolio-title {
     display: none;
+    /* visually-hidden */
     visibility: hidden;
-    
     margin-bottom: 0;
 }
 
@@ -494,15 +493,28 @@ img {
 .clients-list {
     width: 170px;
     height: 92px;
+    padding: 0;
     margin-right: 30px;
     margin-bottom: 0;
-    border: 1px solid var(--border-clients);
-    border-radius: 4px;
-
+    border: none;
 }
 
 .clients-list:nth-child(6n) {
     margin-right: 0;
+}
+
+/* Иконки компаний */
+
+.clients-icon {
+    padding: 16px 32px;
+    border: 1px solid var(--border-clients);
+    border-radius: 4px;
+    fill: var(--clients-accent-color);
+}
+
+.clients-icon:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
 }
 
  /* Портфолио сайты */
