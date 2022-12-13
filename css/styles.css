@@ -7,6 +7,7 @@
     --clients-accent-color: #afb1b8;
     --footer-mail-text-color: rgba(255, 255, 255, 0.6);
     --primary-bg-color: #FFFFFF;
+    --clients-bg-color: #F5F5F5;
     --secondary-bg-color: #F5F4FA;
     --bg-color-hero: #C4C4C4;
     --bgimg-overlay: rgba(47, 48, 58, 0.4);
@@ -107,7 +108,7 @@ ul {
 }
 
 .logo-footer {
-    margin-top: 60px;
+    display: flex;
     color: var(--title-text-color);
 }
 
@@ -132,7 +133,7 @@ ul {
 }
 
 .site-nav .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .site-nav .link {
@@ -164,7 +165,7 @@ ul {
 }
 
 .social-links .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .social-links a {
@@ -186,17 +187,38 @@ ul {
 
 .contacts-mail,
 .contacts-tel {
+    display: flex;
+    align-items: center;
     color: inherit;
 }
 
 .contacts-mail:hover, 
 .contacts-mail:focus {
     color: var(--accent-color);
+
 }
 
 .contacts-tel:hover,
 .contacts-tel:focus {
     color: var(--accent-color);
+}
+
+/* Иконки в шапке конверт и телефон */
+
+.icon-envelope, 
+.icon-smartphone {
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+}
+
+.icon-envelope:hover, 
+.icon-envelope:focus {
+    fill: var(--accent-color);
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+    fill: var(--accent-color);
 }
 
 /* секция герой */
@@ -307,8 +329,11 @@ ul {
 
 
 .section-team {
-
     background-color: var(--secondary-bg-color);
+}
+
+.section-client {
+    background-color: var(--clients-bg-color);
 }
 
 .section-title {
@@ -421,8 +446,6 @@ img {
     font-size: 14px;
     text-transform: uppercase;
 
-    
-
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
@@ -485,6 +508,50 @@ img {
 
  }
 
+.team-icon {
+    display: flex;
+    
+    margin-top: 16px;
+}
+
+.team-icon-social {
+    display: flex;
+    
+}
+
+.team-icon-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    
+    background-color: var(--primary-bg-color);
+    border-radius: 50%;
+}
+
+.team-svg {
+    fill: var(--border-clients);
+}
+
+.team-icon-size:hover, 
+.team-icon-size:focus {
+    background-color: var(--accent-color);
+}
+
+.team-icon-size:hover svg {
+    fill: var(--primary-bg-color);
+}
+
+.team-icon-social:not(:first-child) {
+    margin-left: 10px;
+}
+
+.team-icon-social:first-child {
+    margin-left: 32px;
+}
+
 .clients {
     display: flex;
     flex-wrap: nowrap;
@@ -496,6 +563,7 @@ img {
     padding: 0;
     margin-right: 30px;
     margin-bottom: 0;
+    background-color: var(--clients-bg-color);
     border: none;
 }
 
@@ -512,8 +580,10 @@ img {
     fill: var(--clients-accent-color);
 }
 
-.clients-icon:hover {
+.clients-icon:hover, 
+.clients-icon:focus {
     fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
     cursor: pointer;
 }
 
@@ -530,9 +600,9 @@ img {
 
 .sites-list {
     flex-basis: calc((100% - 2 * var(--card-sites-gap))/ 3 );
-    /* margin-left: var(--card-sites-gap);
-    margin-top: var(--card-sites-gap); */
     border: 1px solid var(--border-sites);
+    /* margin-left: var(--card-sites-gap);
+        margin-top: var(--card-sites-gap); */
 }
 
 /* .sites-list {
@@ -576,8 +646,13 @@ img {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-
+    
     background-color: var(--hero-footer-bg-color);
+}
+
+.footer-all {
+    display: flex;
+    align-items: baseline;
 }
 
 .address {
@@ -598,8 +673,17 @@ img {
     text-decoration: none;
 }
 
+/* .footer-info {
+    display: flex;
+    flex-direction: row;
+} */
+
 .footer-address {
+    display: inline-block;
     margin-top: 20px;
+    width: 231px;
+    height: 81px;
+    margin-right: 70px;
 }
 
 .footer-contacts {
@@ -615,3 +699,27 @@ img {
     margin-top: 9px;
     margin-bottom: 9px;
 }
+
+.footer-social {
+    display: flex; 
+    align-items: baseline; 
+}
+
+.footer-icon {
+    display: flex;
+    outline: 1px solid teal;
+}
+
+.title-footer {
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+
+    color: var(--primary-bg-color);
+    font-weight: 700;
+    line-height: 1.14;
+}
+
+
