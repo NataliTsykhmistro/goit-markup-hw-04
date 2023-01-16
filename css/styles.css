@@ -209,17 +209,8 @@ ul {
 .icon-envelope, 
 .icon-smartphone {
     margin-right: 10px;
-    fill: var(--secondary-text-color);
-}
-
-.icon-envelope:hover, 
-.icon-envelope:focus {
-    fill: var(--accent-color);
-}
-
-.icon-smartphone:hover,
-.icon-smartphone:focus {
-    fill: var(--accent-color);
+    fill: currentColor;
+    /* fill: var(--secondary-text-color); */
 }
 
 /* секция герой */
