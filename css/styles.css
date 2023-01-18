@@ -210,7 +210,6 @@ ul {
 .icon-smartphone {
     margin-right: 10px;
     fill: currentColor;
-    /* fill: var(--secondary-text-color); */
 }
 
 /* секция герой */
@@ -603,23 +602,16 @@ img {
         margin-top: var(--card-sites-gap); */
 }
 
-.sites-link:hover img, 
-.sites-link:focus img {
-    border: 1px solid var(--accent-color);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .sites-link {
     text-decoration: none;
 }
 
-/* .sites-list {
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid var(--border-sites);
+.sites-link:hover,
+.sites-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* 
 .sites-list:nth-child(3n) {
     margin-right: 0;
 }
@@ -628,14 +620,11 @@ img {
     margin-bottom: 0;
 } */
 
-.sites-title:hover,
+/* .sites-title:hover,
 .sites-title:focus {
-    border-color: var(--accent-color);
-    /* border-left: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color); */
+    
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .sites-title {
     padding: 20px 24px;
